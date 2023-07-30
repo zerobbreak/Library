@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://kit.fontawesome.com/af45a58227.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Library</h1>
+    </header>
+
+    <div class="library">
+
+        <div class="button-popup">
+            <button id="popupButton">Add Book <i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <form class="popupContainer" id="popup">
+            <div class="popupContent">
+                <div class="library-input">
+                    <input type="text" id="input-title" placeholder="Enter title ">
+                </div>
+                <div class="library-input">
+                    <input type="text" id="input-author" placeholder="Enter Author">
+                </div>
+
+                <div class="library-input">
+                    <input type="number" id="input-number" placeholder="Enter pages">
+                </div>
+
+                <div class="read-input">
+                    <label for="read">Have you read</label>
+                    <input type="checkbox" name="read" id="read-confirmation">
+                </div>
+
+                <div class="buttons">
+                    <button id="addBook">Add Book</button>
+                    <button id="closeButton">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="display-grid__container"></div>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

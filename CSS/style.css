@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #fff;
+  height: 100px;
+  position: relative;
+}
+
+header h1 {
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.button-popup {
+  padding: 15px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#popupButton {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#popupButton i {
+  background: none;
+}
+
+.library {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.popupContainer {
+  display: none; /* Hide the pop-up container by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999;
+}
+
+.popupContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.library-input {
+  padding: 10px;
+  margin: 20px;
+}
+
+.library-input input {
+  border: none;
+  outline: none;
+  background: none;
+  transition: border-bottom 3ms ease-in;
+}
+
+.read-input {
+  margin: 20px;
+  background: none;
+}
+.read-input label,
+.read-input input {
+  margin: 5px;
+  background: none;
+}
+
+.flex {
+  display: flex;
+  gap: 5px;
+  background: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+  background: none;
+}
+
+#closeButton {
+  width: 60%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background: rgb(255, 58, 58);
+  color: #fff;
+}
+
+#addBook {
+  width: 60%;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+#display-grid__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.card h2,
+.card h3,
+.card p,
+.card span {
+  margin: 5px;
+}
+
+.card span {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.card .read-checkbox {
+  margin: 5px;
+}
+/* ... Rest of the CSS styles ... */
+
+.read-button, 
+.remove-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Display an ellipsis (...) when text is cut off */
+}
+
+.remove-button{
+    background-color: #ccc;
+}
+/* Style for the active (checked) "Read" button and "Remove" button */
+.read-button--active {
+  background-color: #2ecc71; /* Green color */
+}
+
+.read-button--not-read {
+  background-color: #ff0000; /* Red color */
+}
